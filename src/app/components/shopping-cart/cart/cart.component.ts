@@ -64,3 +64,21 @@ export class CartComponent implements OnInit {
 
   }  
 }
+
+placeOrderBanner()
+  {
+
+    console.log("Order Placed Successfully !! ")
+    //this.placeOrderMessage = true;
+    alert("Order Placed Successfully !!")
+    this.cartItems.length = 0;
+    this.cartTotal = 0;
+
+
+    // setTimeout(() => {
+    //   this.cartItems.length = 0;
+    //   this.cartTotal = 0;
+    // }, 3000)
+
+  }
+
