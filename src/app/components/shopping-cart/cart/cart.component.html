@@ -16,3 +16,12 @@
     <strong>Total</strong> {{ cartTotal | currency:'INR' }}
   </li>
 </ul>
+<div *ngIf="cartItems.length > 0">
+  <button class = "btn btn-success" (click)="placeOrderBanner()">Place Order</button>
+    <!-- <p *ngIf="placeOrderMessage" class="alert alert-success">
+        <strong>Order Placed Successfully !!!</strong>
+    </p> -->
+</div>
+
+
+
